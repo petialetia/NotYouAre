@@ -1,7 +1,4 @@
-#include <cassert>
-#include <iostream>
-
-void NotYouAre(int argc, char** argv);
+#include <NotYouAre.hpp>
 
 int main(int argc, char** argv)
 {
