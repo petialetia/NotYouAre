@@ -12,6 +12,8 @@ set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
 
 set(CMAKE_CXX_FLAGS "-Wall -Wextra -pedantic -O2")
 
+set(CMAKE_CXX_FLAGS_DEBUG "-fsanitize=undefined -fsanitize=address")
+
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
 add_executable(NotYouAre src/NotYouAre.cpp)
