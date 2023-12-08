@@ -1,7 +1,14 @@
 #include <cassert>
 #include <iostream>
 
+void NotYouAre(int argc, char** argv);
+
 int main(int argc, char** argv)
+{
+    NotYouAre(argc, argv);
+}
+
+void NotYouAre(int argc, char** argv)
 {
     assert(argc > 0);
 
