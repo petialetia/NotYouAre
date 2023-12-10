@@ -16,9 +16,5 @@ set(CMAKE_CXX_FLAGS_DEBUG "-fsanitize=undefined -fsanitize=address")
 
 include_directories(${PROJECT_SOURCE_DIR}/include)
 
+add_subdirectory(src)
 add_subdirectory(tests)
-
-add_library(NotYouAre STATIC src/NotYouAre.cpp)
-
-add_executable(Main src/Main.cpp)
-target_link_libraries(Main NotYouAre)
