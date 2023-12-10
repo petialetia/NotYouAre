@@ -14,6 +14,6 @@ TEST(NotYouAre, Handsome)
         argv[1] = "handsome";
 
         NotYouAre(argc, argv);
-    }, "Not, you are handsome");
+    }, "Not, you are handsome\n");
 }
 
