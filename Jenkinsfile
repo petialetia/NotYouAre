@@ -14,11 +14,6 @@ pipeline {
                 sh './test.sh'
             }
         }
-        stage('Ls') {
-            steps {
-                sh 'ls'
-            }
-        }
     }
     post {
         always {
