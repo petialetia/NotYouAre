@@ -3,6 +3,7 @@ FROM ubuntu:latest
 WORKDIR /NotYouAre
 
 COPY src ./src
+COPY src ./tests
 COPY CMakeLists.txt .
 
 COPY requirements_ubuntu.sh .
