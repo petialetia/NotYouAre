@@ -15,4 +15,9 @@ pipeline {
             }
         }
     }
+    post {
+        always {
+            archiveArtifacts artifacts: 'TestsResult.xml'
+        }
+    }
 }
