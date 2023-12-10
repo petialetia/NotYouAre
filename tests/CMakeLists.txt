@@ -1,16 +1,4 @@
-function(fetch_package pakcage_name git_link git_tag)
-  find_package("${pakcage_name}" QUIET)
+find_package(GTest)
 
-  if (NOT "${${pakcage_name}_FOUND}")
-
-    FetchContent_Declare("${pakcage_name}"
-      GIT_REPOSITORY "${git_link}"
-      GIT_TAG "${git_tag}"
-    )
-
-    FetchContent_MakeAvailable("${pakcage_name}")
-
-  endif (NOT "${${pakcage_name}_FOUND}")
-endfunction()
-
-fetch_package(GTest https://github.com/google/googletest.git main)
+add_executable(Tests EXCLUDE_FROM_ALL MainTests.cpp NotYouAreTests.cpp)
+target_link_libraries(Tests PUBLIC ${GTEST_LIBRARIES} NotYouAre)

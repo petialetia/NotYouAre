@@ -1,6 +1,6 @@
 #include <NotYouAre.hpp>
 
-void NotYouAre(int argc, char** argv)
+void NotYouAre(int argc, const char** argv)
 {
     assert(argc > 0);
 
