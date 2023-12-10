@@ -14,6 +14,11 @@ pipeline {
                 sh './test.sh'
             }
         }
+        stage('Docker building') {
+            steps {
+                sh 'docker build --tag "not_you_are" .'
+            }
+        }
     }
     post {
         always {
