@@ -1,3 +1,3 @@
 #!/bin/bash
 
-./bin/NotYouAre.out $@
+./bin/Main.out $@
