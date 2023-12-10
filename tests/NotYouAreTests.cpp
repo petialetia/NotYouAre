@@ -26,5 +26,5 @@ TEST(NotYouAre, Boring)
         argv[0] = "./Main";
 
         NotYouAre(argc, argv);
-    }, "You are so boring, please give me some command line arguments");
+    }, "You are so boring, please give me some command line arguments\n");
 }
