@@ -38,7 +38,7 @@ TEST(NotYouAre, MultipleArguments)
         argv[0] = "./Main";
         argv[1] = "the";
         argv[2] = "most";
-        argv[3] = "beautiful";
+        argv[3] = "handsome";
         argv[4] = "guy";
         argv[5] = "I";
         argv[6] = "have";
@@ -46,5 +46,5 @@ TEST(NotYouAre, MultipleArguments)
         argv[8] = "seen";
 
         NotYouAre(argc, argv);
-    }, "Not, you are the most beautiful guy I have ever seen\n");
+    }, "Not, you are the most handsome guy I have ever seen\n");
 }
