@@ -4,9 +4,14 @@ pipeline {
         githubPush()
     }
     stages {
-        stage('Test') {
+        stage('Install dependencies') {
             steps {
-                sh 'ls'
+                sh './requirements_ubuntu.sh'
+            }
+        }
+        stage('Building') {
+            steps {
+                sh './build.sh'
             }
         }
     }
