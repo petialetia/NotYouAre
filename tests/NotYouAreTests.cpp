@@ -28,3 +28,23 @@ TEST(NotYouAre, Boring)
         NotYouAre(argc, argv);
     }, "You are so boring, please give me some command line arguments\n");
 }
+
+TEST(NotYouAre, MultipleArguments)
+{
+    checkOutput([]() {
+        const int argc = 9;
+
+        const char* argv[argc];
+        argv[0] = "./Main";
+        argv[1] = "the";
+        argv[2] = "most";
+        argv[3] = "beautiful";
+        argv[4] = "guy";
+        argv[5] = "I";
+        argv[6] = "have";
+        argv[7] = "ever";
+        argv[8] = "seen";
+
+        NotYouAre(argc, argv);
+    }, "Not, you are the most beautiful guy I have ever seen");
+}
