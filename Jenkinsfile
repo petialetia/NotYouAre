@@ -4,11 +4,6 @@ pipeline {
         githubPush()
     }
     stages {
-        stage('Install dependencies') {
-            steps {
-                sh './requirements_ubuntu.sh'
-            }
-        }
         stage('Building') {
             steps {
                 sh './build.sh'
