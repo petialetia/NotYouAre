@@ -14,6 +14,11 @@ pipeline {
                 sh './test.sh'
             }
         }
+        stage('Testing') {
+            steps {
+                sh 'ls'
+            }
+        }
     }
     post {
         always {
