@@ -17,3 +17,14 @@ TEST(NotYouAre, Handsome)
     }, "Not, you are handsome\n");
 }
 
+TEST(NotYouAre, Boring)
+{
+    checkOutput([]() {
+        const int argc = 1;
+
+        const char* argv[argc];
+        argv[0] = "./Main";
+
+        NotYouAre(argc, argv);
+    }, "You are so boring, please give me some command line arguments");
+}
