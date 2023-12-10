@@ -46,5 +46,5 @@ TEST(NotYouAre, MultipleArguments)
         argv[8] = "seen";
 
         NotYouAre(argc, argv);
-    }, "Not, you are the most beautiful guy I have ever seen");
+    }, "Not, you are the most beautiful guy I have ever seen\n");
 }
