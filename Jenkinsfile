@@ -17,7 +17,7 @@ pipeline {
     }
     post {
         always {
-            archive 'TestsResult.xml'
+            junit 'TestsResult.xml'
         }
     }
 }
