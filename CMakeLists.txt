@@ -2,6 +2,12 @@ cmake_minimum_required(VERSION 3.13)
 
 project(NotYouAre LANGUAGES CXX)
 
+list(APPEND CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake-scripts")
+
+include(code-coverage)
+
+add_code_coverage()
+
 set(CMAKE_CXX_STANDARD 20)
 
 set(CMAKE_EXECUTABLE_SUFFIX ".out")
