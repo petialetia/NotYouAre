@@ -9,5 +9,5 @@ then
     cmake --build . --target Tests -j 16
 else
     cmake ..
-    cmake --build . -j 16
+    cmake --build . --target Main -j 16
 fi
