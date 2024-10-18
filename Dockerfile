@@ -13,7 +13,6 @@ RUN bash update_submodules.sh
 
 COPY src ./src
 COPY include ./include
-COPY tests ./tests
 COPY CMakeLists.txt .
 COPY build.sh .
 
