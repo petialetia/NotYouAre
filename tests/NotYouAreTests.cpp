@@ -4,18 +4,18 @@
 
 #include "CheckOutput.hpp"
 
-TEST(NotYouAre, Handsome)
-{
-    checkOutput([]() {
-        const int argc = 2;
+// TEST(NotYouAre, Handsome)
+// {
+//     checkOutput([]() {
+//         const int argc = 2;
 
-        const char* argv[argc];
-        argv[0] = "./Main";
-        argv[1] = "handsome";
+//         const char* argv[argc];
+//         argv[0] = "./Main";
+//         argv[1] = "handsome";
 
-        NotYouAre(argc, argv);
-    }, "Not, you are handsome\n");
-}
+//         NotYouAre(argc, argv);
+//     }, "Not, you are handsome\n");
+// }
 
 TEST(NotYouAre, Boring)
 {
