@@ -11,3 +11,4 @@ Running program with some command line argument, like "hadsome guy", will result
 2) Execute build.sh
 
 3) Execute run.sh with some arguments (like "handsome guy")
+
