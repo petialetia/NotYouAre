@@ -1,3 +1,6 @@
+#include <cassert>
+#include <iostream>
+
 #include <NotYouAre.hpp>
 
 void NotYouAre(int argc, const char** argv)
